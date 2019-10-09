@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/arrowbacklay"
+        android:layout_width="fill_parent"
+        android:gravity="center|left"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/arrow_black" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_weight="1.5"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="1.4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/defaultimg"
+                app:border_width="2dp"
+                app:border_color="#FF000000"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                 />
+            <TextView
+                android:id="@+id/nameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_marginTop="0dp"
+                android:text="Nirbhay"/>
+            <TextView
+                android:id="@+id/videocounter"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="14dp"
+                android:gravity="center"
+
+                android:layout_marginTop="2dp"
+                android:text="0 Videos"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="0.6"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/postbtn"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/noOfPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="60"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="14dp"
+            android:text="Fans"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/follwerbtn"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/follwercount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="40"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"
+            android:text="Heart"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/follwingbtn"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/follwingcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="14dp"
+            android:text="following"/>
+    </LinearLayout>
+
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:layout_height="fill_parent">
+                <Button
+                    android:id="@+id/editProBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+
+                    android:background="@drawable/login_btn"
+                    android:text="Edit Profile"
+                    android:textColor="#1e1e1e"
+
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#c6c4c4"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/gridbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/listicon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/videophot"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                  />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#c6c4c4"/>
+        <FrameLayout
+            android:id="@+id/content_frame1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="Name"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="10"
+            android:text="Mobile"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Address"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="#ffc0cb"
+            android:text="update"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

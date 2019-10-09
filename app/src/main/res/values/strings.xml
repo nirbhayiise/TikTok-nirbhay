@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TikTok</string>
+    <string name="fb_button_like">Like</string>
+    <string name="fb_button_comment">Comment</string>
+    <string name="fb_button_share">Share</string>
+    <string name="read_file">This app needs access to your file storage so that it can read video.</string>
+</resources>
